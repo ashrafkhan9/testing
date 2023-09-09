@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1180px;
+    margin:0px auto;
+    padding:0px 20px;
+    overflow: hidden;
+}
+
+/* Header-Section */
+
+.header {
+    width: 100%;
+    background: #fff;
+}
+
+.header-top-row {
+    background-color: #ecf3fc;
+    padding: 10px 0;
+}
+
+.row{
+    justify-content: space-between;
+}
+
+.row-left img {
+    padding-right: 7px;
+}
+.row-left a {
+    text-decoration: none;
+    font-size: 17px;
+    color: #202020;
+}
+.row-left a:hover{
+    color: #183661;
+    text-decoration: underline;
+}
+
+.social-icons{
+    flex-wrap: wrap;
+}
+
+.social-icons li {
+    list-style: none;
+    padding-right: 5px;
+}
+
+.social-icons li a { 
+    text-decoration: none;
+    color: #fff;
+    background-color: #183661;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 17px;
+    line-height: 30px;
+    transition: all 0.5s;
+}
+.social-icons li a:hover{
+    background-color: #f2c119;
+}
+
+.select-box{
+    width: 90px;
+    padding: 3px 10px 3px 5px;
+    border-radius: 30px;
+    border: #677691 solid 1px;
+    color: #667691;
+    font-size: 12px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.time {
+    color: #0d1015;
+    font-size: 14px;
+}
+
+.header-middle-row {
+    padding: 22px 0px;
+}
+.row-right {
+    gap: 50px;
+}
+.primary-btn {
+    padding: 10px 30px;
+    border: none;
+    background-color: #183661;
+    color: #FFFFFF;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.5s;
+}
+.primary-btn:hover{
+    background-color: #f2c119;
+    color: #FFFFFF;
+    transform: scale(1.05);
+}
+
+.header-bottom-row {
+    background-color: #183661;
+}
+/* .nav-links{
+    flex-wrap: wrap;
+} */
+.nav-links li {
+    list-style: none;
+    padding: 30px 24px;
+    font-size: 17px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.nav-links li:hover{
+    background-color: #f2c119;
+} 
+.nav-links li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.search-bar{
+    position: relative;
+}
+#search-input {
+    height: 32px;
+    width: 340px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    font-size: 15px;
+    padding: 0px 12px;
+}
+
+#search-buttom {
+    position: absolute;
+    right: 14px;
+    top: 2px;
+    color: #b7b7b7;
+}
+
+/* Hero-Section */
+
+.hero-section{
+    padding-top: 90px;
+    background: url(./images/main-banner.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.content-image-section{
+    justify-content: space-between;
+}
+
+.content-section :nth-child(1){
+    color: #183661;
+    font-family: Righteous ,cursive;
+    font-size: 85px;
+}
+.content-section :nth-child(2){
+    color: #f2c119;
+    font-size: 100px;
+    font-weight: 500;
+    padding-bottom: 50px;
+    line-height: 100px;
+}
+.content-section p {
+    color: #2a2a2c;
+    font-size: 35px;
+    margin-bottom: 50px;
+    line-height: 20px;
+}
+.secondary-btn{
+    padding: 18px 55px;    
+    border: none;
+    background-color: #1d37fd;
+    color: #FFFFFF;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.5s;
+    font-weight: 600;
+}
+.secondary-btn:hover{
+    background-color: #f2c119;
+    color: #FFFFFF;
+    transform: scale(1.05);
+}
+.banner-img img{
+    height: 500px;
+}
+
+/* Article-Boxes-Section */
+
+
+#articles{
+    display: flex;
+    color: #fff;
+    justify-content: center;
+}
+
+#articles .product{
+    width: 228px;
+    height: 205px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#articles .product:nth-child(odd){
+    background-color: #f2c119;
+}
+
+#articles .product:nth-child(even){
+    background-color: #183661;
+}
+
+/* Featured Products Section */
+
+.products-section {
+    padding: 90px 0px;
+    background: url(./images/product_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.product-heading h2{
+    font-size: 35px;
+    color: #141414;
+}
+.product-line{
+    height: 5px;
+    background-color: #f2c119;
+    margin: 10px 0px 40px 0px;
+}
+
+/* ----------------------------- */
+
+
+.shoes-products{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.shoesImg-para{
+    width: 208px;
+}
+
+.shoes-images{
+    background-color: #f2f2f2;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shoesImg-para p{
+    padding-top: 22px;
+}
+
+.seemore-btn{
+    display: flex;
+    justify-content: center;
+}
+.seemore-btn button{
+    padding: 16px 50px;    
+    border: none;
+    background-color: #183661;
+    color: #FFFFFF;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.5s;
+    font-weight: 600;
+    margin-top: 40px;
+    
+}
+.seemore-btn button:hover{
+    background-color: #f2c119;
+    color: #FFFFFF;
+    transform: scale(1.05);
+}
+
+
+/* Fashion-section */
+
+.fashion-collection img{
+    width: 100%;
+    height: auto;
+}
+
+/* Lastest-News-Section */
+
+.news-section{
+    padding: 90px 0px;
+}
+
+
+.middle-section{
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.news-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.news-content h3{
+    font-size: 26px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.date-like{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #141414;
+    align-items: center;
+}
+
+.date-like p{
+    border-bottom: 1px solid #f2c119;
+    padding-bottom: 4px;
+}
+
+#news-para{
+    font-size: 17px;
+    color: #141414;
+    padding-top: 15px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+/* Heading And Input Email Section */
+
+.heading-input-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.email{
+    width: 600px;
+}
+.email input{
+    height: 55px;
+    width: 100%;
+    border-radius: 2px solid white;
+    border-radius: 40px;
+    padding: 10px;
+    font-size: 16px;
+}
